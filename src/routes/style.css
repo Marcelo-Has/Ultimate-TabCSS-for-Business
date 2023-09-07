@@ -1,0 +1,92 @@
+.Layout {
+    --title: 'Layout';
+    --description: "Use the Layout element to create a background for your dashboard, following the company's visual communication.";
+    border-top: 250px solid #FFF159;
+    background-color: #F6F6FB;
+
+
+}
+
+.Layout::before {
+    --title: 'Menu';
+    --description: "The Menu element is used to create the Menu header and add the glassmorphism style to the dashboard.";
+    content: 'Menu     ';
+    color: #1E2E7A;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    padding: 115px 30px;
+    top: -220px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffffff88;
+    background: linear-gradient(138deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.04) 100%);
+
+}
+
+.Layout::after {
+    --title: 'Logo';
+    --description: "The Logo element is used to render the logo on the left top on your dashboard.";
+    content: url("https://careers-meli.cdn.prismic.io/careers-meli/2ebe0734-fdd3-4d2c-be30-8e4c5cb8c51c_Mercado+Livre+%281%29.svg");
+    position: absolute;
+    z-index: 50;
+    top: -180px;
+    left: 80px;
+    transform: scale(1.30);
+    border-bottom: 1px solid #1E2E7A;
+    height: 100px;
+}
+
+
+.box {
+    --title: 'White box';
+    --description: "Use the White box element to render a standard background for your charts.";
+    border-radius: 10px;
+    background: white;
+    z-index: 100;
+}
+
+.box-red {
+    --title: 'Red box';
+    --description: "Use the Red box element to render a background using the company's red color.";
+    border-radius: 10px;
+    background: #F3BCBD;
+    z-index: 100;
+}
+
+.box-blue {
+    --title: 'Blue box';
+    --description: "Use the Blue box element to render a background using the company's blue color.";
+    border-radius: 10px;
+    background: #C5ABFD;
+    z-index: 100;
+}
+
+.box-gray {
+    --title: 'Gray box';
+    --description: "Use the Gray box element to render a background using the company's gray color.";
+    border-radius: 10px;
+    background: #EDEDED;
+    z-index: 100;
+}
+
+.btn-on {
+    --title: 'Button On';
+    --description: "Use the Button On element to define a background for the selected button on the left side, which represents the current dashboard.";
+    border-radius: 10px;
+    background: #1E2E7A;
+    z-index: 100;
+}
+
+.btn-off {
+    --title: 'Button Off';
+    --description: "Use the Button Off element to define a background for the button that is not selected on the left side, which represents the other dashboards.";
+    border-radius: 10px;
+    border: 1px solid #1E2E7A;
+    background: #FFF;
+    z-index: 100;
+}

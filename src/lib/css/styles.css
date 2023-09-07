@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --off-white: #F5F5F5;
+  --off-white2: #d6d6d6;
+  --white: #FFF;
+  --black: #1A1A1A;
+  --medium-black: #3D3D3D;
+  --dark-purple: #3C0675;
+  --purple: #850DF5;
+  --medium-purple: #A456F7;
+  --light-purple: #F3E7FE;
+  
+}
+body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  border: none;
+  background: none;
+  display: flex;
+  border-radius: 5px !important;
+  padding: 10px 15px;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  gap: 12px;
+}
