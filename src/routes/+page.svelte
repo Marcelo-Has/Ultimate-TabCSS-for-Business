@@ -122,7 +122,7 @@
 		);
 
 		function configure() {
-			const popupUrl = `${window.location.origin}/extensions/ultimate-tab-css-business/popup`;
+			const popupUrl = `${window.location.origin}/popup`;
 			const defaultIntervalInMin = '5';
 			tableauExt.ui
 				.displayDialogAsync(popupUrl, defaultIntervalInMin, {
